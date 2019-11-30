@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.makeup;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -11,9 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.test.controller.MyLipstickController;
-import com.example.test.model.Lipstick;
-import com.example.test.view.Adapter;
+import com.example.makeup.controller.MyLipstickController;
+import com.example.makeup.model.Lipstick;
+import com.example.makeup.view.Adapter;
+import com.example.test.R;
 
 import java.util.List;
 

@@ -1,12 +1,12 @@
-package com.example.test.controller;
+package com.example.makeup.controller;
 
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
-import com.example.test.HomeFragment;
-import com.example.test.RestApiMakeUp;
-import com.example.test.model.Lipstick;
-import com.example.test.view.MainActivity;
+
+import com.example.makeup.HomeFragment;
+import com.example.makeup.RestApiMakeUp;
+import com.example.makeup.model.Lipstick;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

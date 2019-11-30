@@ -1,4 +1,4 @@
-package com.example.test.model;
+package com.example.makeup.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -43,8 +43,8 @@ public class Lipstick implements Serializable  {
     }
 
     public String getName(){
-   return name;
-   }
+        return name;
+    }
 
     public String getImage_link() {
         return image_link;
