@@ -1,4 +1,4 @@
-package com.example.test.view;
+package com.example.makeup.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.test.HomeFragment;
+import com.example.makeup.HomeFragment;
+import com.example.makeup.model.Lipstick;
 import com.example.test.R;
-import com.example.test.model.Lipstick;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,7 +109,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
 
-       // private Lipstick selectedMakeUp = values.get(position);
+        // private Lipstick selectedMakeUp = values.get(position);
 
 
         holder.txtHeader.setText(mu.getName());

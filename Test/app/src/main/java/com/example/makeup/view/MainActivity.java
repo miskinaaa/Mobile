@@ -1,4 +1,4 @@
-package com.example.test.view;
+package com.example.makeup.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -11,13 +11,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 
-import com.example.test.FavoritesFragment;
-import com.example.test.HomeFragment;
-import com.example.test.Injection;
+import com.example.makeup.FavoritesFragment;
+import com.example.makeup.HomeFragment;
+import com.example.makeup.SearchFragment;
 import com.example.test.R;
-import com.example.test.SearchFragment;
-import com.example.test.controller.MyLipstickController;
-import com.example.test.model.Lipstick;
 
 import java.util.List;
 

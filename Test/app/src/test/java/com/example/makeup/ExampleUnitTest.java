@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.makeup;
 
 import org.junit.Test;
 
