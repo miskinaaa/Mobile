@@ -39,19 +39,19 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
             img = (ImageView)view.findViewById((R.id.icon));
             //values = makeUpList;
 
-            /*itemView.setOnClickListener(v -> {
-                Intent newIntent = new Intent(v.getContext(), HomeFragment.class);
-                newIntent.putExtra("Lipstick", values.get(getAdapterPosition()));
+            itemView.setOnClickListener(v -> {
+                Intent newIntent = new Intent(v.getContext(), SecondActivityFoundation.class);
+                newIntent.putExtra("Foundation", values.get(getAdapterPosition()));
                 v.getContext().startActivity(newIntent);
-            });*/
+            });
 
         }
 
-        public void onClick(View v) {
-            Intent intent = new Intent(v.getContext(), HomeFragment.class);
+        /*public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(), SecondActivity.class);
             intent.putExtra("Foundation", values.get(getAdapterPosition()));
             v.getContext().startActivity(intent);
-        }
+        }*/
     }
 
     public void add(int position, Foundation item) {
@@ -69,7 +69,7 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
     public void infoDisplay(int position){
         Log.d("position", String.valueOf(position));
         // Create an Intent to start the second activity
-        Intent infoIntent = new Intent(mainActivity, HomeFragment.class);
+        Intent infoIntent = new Intent(mainActivity, SecondActivityFoundation.class);
         final Foundation selectedFoundation = values.get(position);
         ArrayList<String> MakeUp= new ArrayList<>() ;
         MakeUp.add(selectedFoundation.getBrand());
@@ -111,7 +111,12 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
 
 
         holder.txtHeader.setText(mu.getName());
-        holder.txtFooter.setText("Marque : " + mu.getBrand());
+        if (mu.getBrand().matches("")) {
+            holder.txtFooter.setText("Marque : " + mu.getBrand());
+        }
+        else {
+            holder.txtFooter.setText("Marque : " + mu.getBrand().toUpperCase());
+        }
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
         //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);

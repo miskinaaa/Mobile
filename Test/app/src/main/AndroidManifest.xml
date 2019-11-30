@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.makeup.view.SecondActivity" />
+        <activity android:name="com.example.makeup.view.SecondActivityFoundation" />
+        <activity android:name="com.example.makeup.view.SecondActivityBlush" />
+
     </application>
 
 </manifest>

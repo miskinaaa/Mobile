@@ -40,19 +40,19 @@ public class AdapterBlush extends RecyclerView.Adapter<AdapterBlush.ViewHolder> 
             img = (ImageView)view.findViewById((R.id.icon));
             //values = makeUpList;
 
-            /*itemView.setOnClickListener(v -> {
-                Intent newIntent = new Intent(v.getContext(), HomeFragment.class);
-                newIntent.putExtra("Lipstick", values.get(getAdapterPosition()));
+            itemView.setOnClickListener(v -> {
+                Intent newIntent = new Intent(v.getContext(), SecondActivityBlush.class);
+                newIntent.putExtra("Blush", values.get(getAdapterPosition()));
                 v.getContext().startActivity(newIntent);
-            });*/
+            });
 
         }
 
-        public void onClick(View v) {
+       /* public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), HomeFragment.class);
             intent.putExtra("Blush", values.get(getAdapterPosition()));
             v.getContext().startActivity(intent);
-        }
+        }*/
     }
 
     public void add(int position, Blush item) {
@@ -70,7 +70,7 @@ public class AdapterBlush extends RecyclerView.Adapter<AdapterBlush.ViewHolder> 
     public void infoDisplay(int position){
         Log.d("position", String.valueOf(position));
         // Create an Intent to start the second activity
-        Intent infoIntent = new Intent(mainActivity, HomeFragment.class);
+        Intent infoIntent = new Intent(mainActivity, SecondActivityBlush.class);
         final Blush selectedBlush = values.get(position);
         ArrayList<String> MakeUp= new ArrayList<>() ;
         MakeUp.add(selectedBlush.getBrand());
@@ -112,7 +112,13 @@ public class AdapterBlush extends RecyclerView.Adapter<AdapterBlush.ViewHolder> 
 
 
         holder.txtHeader.setText(mu.getName());
-        holder.txtFooter.setText("Marque : " + mu.getBrand());
+        if (mu.getBrand() == null) {
+            holder.txtFooter.setText("Marque : " + mu.getBrand());
+        }
+        else {
+            holder.txtFooter.setText("Marque : " + mu.getBrand().toUpperCase());
+        }
+
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
         //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);

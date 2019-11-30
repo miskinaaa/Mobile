@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -22,7 +23,6 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private List<Lipstick> values;
-
     private MainActivity mainActivity;
     private int position;
 
@@ -41,19 +41,19 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             img = (ImageView)view.findViewById((R.id.icon));
             //values = makeUpList;
 
-            /*itemView.setOnClickListener(v -> {
-                Intent newIntent = new Intent(v.getContext(), HomeFragment.class);
+            itemView.setOnClickListener(v -> {
+                Intent newIntent = new Intent(v.getContext(), SecondActivity.class);
                 newIntent.putExtra("Lipstick", values.get(getAdapterPosition()));
                 v.getContext().startActivity(newIntent);
-            });*/
+            });
 
         }
 
-        public void onClick(View v) {
+        /*public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), HomeFragment.class);
             intent.putExtra("Lipstick", values.get(getAdapterPosition()));
             v.getContext().startActivity(intent);
-        }
+        }*/
     }
 
     public void add(int position, Lipstick item) {
@@ -67,11 +67,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
 
+
+
     private static final String SelectedMakeUp = "selected_MakeUp";
     public void infoDisplay(int position){
         Log.d("position", String.valueOf(position));
         // Create an Intent to start the second activity
-        Intent infoIntent = new Intent(mainActivity, HomeFragment.class);
+        Intent infoIntent = new Intent(mainActivity, SecondActivity.class);
         final Lipstick selectedLipstick = values.get(position);
         ArrayList<String> MakeUp= new ArrayList<>() ;
         MakeUp.add(selectedLipstick.getBrand());
@@ -113,7 +115,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
         holder.txtHeader.setText(mu.getName());
-        holder.txtFooter.setText("Marque : " + mu.getBrand().toUpperCase());
+        if (mu.getBrand().matches("")) {
+            holder.txtFooter.setText("Marque : " + mu.getBrand());
+        }
+        else {
+            holder.txtFooter.setText("Marque : " + mu.getBrand().toUpperCase());
+        }
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
         //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);
