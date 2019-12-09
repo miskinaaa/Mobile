@@ -25,6 +25,10 @@
         <activity android:name="com.example.makeup.view.SecondActivityFoundation" />
         <activity android:name="com.example.makeup.view.SecondActivityBlush" />
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
