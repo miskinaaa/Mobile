@@ -4,17 +4,17 @@
     <item
         android:id="@+id/nav_home"
         android:iconTint="@color/cardview_dark_background"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@mipmap/ic_lips_background"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/nav_favorites"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@mipmap/ic_blush_background"
         android:title="@string/title_dashboard" />
 
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@mipmap/ic_found_background"
         android:title="@string/title_notifications" />
 
 </menu>
