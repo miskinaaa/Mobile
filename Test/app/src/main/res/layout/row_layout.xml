@@ -18,28 +18,35 @@
 
     <TextView
         android:id="@+id/secondLine"
-        android:layout_width="fill_parent"
-        android:layout_height="15dip"
+        android:layout_width="272dp"
+        android:layout_height="33dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="11dp"
         android:layout_toRightOf="@id/icon"
         android:ellipsize="marquee"
+        android:fontFamily="@font/monda"
         android:singleLine="true"
         android:text="Description"
         android:textSize="12sp" />
 
     <TextView
         android:id="@+id/firstLine"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
         android:layout_alignWithParentIfMissing="true"
         android:layout_above="@id/secondLine"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp"
         android:layout_toRightOf="@id/icon"
+        android:fontFamily="@font/monda"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
