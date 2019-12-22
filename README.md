@@ -32,6 +32,7 @@ Ainsi que la marque, le prix et une description du produit.
 * GridLayout
 * Scroll view
 * Fragment
+* LinearLayout
 
 ### Librairies utilisées
 
@@ -43,5 +44,6 @@ Ainsi que la marque, le prix et une description du produit.
 * <a href="https://developer.android.com/reference/android/support/v7/widget/CardView">CardView</a>
 * <a href="https://developer.android.com/reference/android/support/design/widget/BottomNavigationView">BottomNavigationView</a>
 * <a href="https://developer.android.com/reference/android/widget/GridLayout">GridLayout</a>
+* <a href="https://developer.android.com/reference/android/widget/LinearLayout">LinearLayout</a>
 * <a href="https://developer.android.com/reference/android/widget/ScrollView">ScrollView</a>
 
