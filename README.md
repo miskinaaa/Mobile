@@ -5,6 +5,7 @@
 
 
 MakeUP est une application Android qui utilise l'API Makeup pour afficher les rouges à lèvres, blush et concealer du moment.
+Ainsi que la marque, le prix et une description du produit. 
 
 ### Installation
 * ``` git clone https://github.com/miskinaaa/Mobile.git ```
@@ -14,9 +15,8 @@ MakeUP est une application Android qui utilise l'API Makeup pour afficher les ro
 * Architecture MVC
 * Appel REST API
 * Affichage d'une liste de CardView dans un RecyclerView 
-* 3 activités avec une bottom navigation activity
+* 3 activités avec une bottom bar navigation
 * Affichage du détail
-* Cache
 * GridLayout
 
 ### Librairies utilisées
