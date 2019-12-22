@@ -14,9 +14,10 @@ MakeUP est une application Android qui utilise l'API Makeup pour afficher les ro
 * Architecture MVC
 * Appel REST API
 * Affichage d'une liste de CardView dans un RecyclerView 
-* 2 activités
+* 3 activités avec une bottom navigation activity
 * Affichage du détail
 * Cache
+* GridLayout
 
 ### Librairies utilisées
 
@@ -25,4 +26,4 @@ MakeUP est une application Android qui utilise l'API Makeup pour afficher les ro
 * <a href="https://github.com/square/retrofit">Retrofit</a>
 * <a href="https://developer.android.com/guide/topics/ui/layout/recyclerview">RecyclerView</a>
 * <a href="https://developer.android.com/reference/android/support/v7/widget/CardView">CardView</a>
-
+* <a href="https://github.com/bumptech/glide">Glide</a>
