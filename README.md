@@ -1,5 +1,7 @@
 # MakeUP
 
+![alt text](https://github.com/miskinaaa/Mobile/blob/develop/Test/app/src/main/ic_icon-web.png) 
+
 
 
 MakeUP est une application Android qui utilise l'API Makeup pour afficher les rouges à lèvres, blush et concealer du moment.
