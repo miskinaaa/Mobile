@@ -27,8 +27,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         Lipstick mu = (Lipstick) getIntent().getSerializableExtra("Lipstick");
-        // Foundation fd = (Foundation) getIntent().getSerializableExtra("Foundation");
-        //Blush bl = (Blush) getIntent().getSerializableExtra("Blush");
 
         description = findViewById(R.id.desc);
         brand = findViewById(R.id.brand);

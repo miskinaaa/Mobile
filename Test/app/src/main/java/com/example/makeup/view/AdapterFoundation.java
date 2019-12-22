@@ -103,11 +103,6 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
         this.position = position;
 
         Foundation mu = values.get(position);
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-
-        // private Lipstick selectedMakeUp = values.get(position);
-
 
         holder.txtHeader.setText(mu.getName());
         if (mu.getBrand().matches("")) {
@@ -118,7 +113,6 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
         }
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
-        //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
