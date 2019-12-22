@@ -1,4 +1,4 @@
-package com.example.makeup;
+package com.example.makeup.controller;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.makeup.Injection;
 import com.example.makeup.controller.MyFoundationController;
 import com.example.makeup.model.Foundation;
 import com.example.makeup.view.AdapterFoundation;

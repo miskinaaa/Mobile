@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.makeup.HomeFragment;
 import com.example.makeup.model.Lipstick;
 import com.example.test.R;
 
@@ -108,10 +106,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         this.position = position;
 
         Lipstick mu = values.get(position);
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-
-        // private Lipstick selectedMakeUp = values.get(position);
 
 
         holder.txtHeader.setText(mu.getName());
@@ -123,7 +117,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         }
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
-        //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);
     }
 
     // Return the size of your dataset (invoked by the layout manager)

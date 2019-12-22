@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.makeup.HomeFragment;
 import com.example.makeup.model.Blush;
 import com.example.test.R;
 
@@ -105,10 +104,6 @@ public class AdapterBlush extends RecyclerView.Adapter<AdapterBlush.ViewHolder> 
         this.position = position;
 
         Blush mu = values.get(position);
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-
-        // private Lipstick selectedMakeUp = values.get(position);
 
 
         holder.txtHeader.setText(mu.getName());
@@ -121,7 +116,6 @@ public class AdapterBlush extends RecyclerView.Adapter<AdapterBlush.ViewHolder> 
 
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
-        //Picasso.get().load(selectedMakeUp.getImage_link()).into(image);
     }
 
     // Return the size of your dataset (invoked by the layout manager)

@@ -11,14 +11,17 @@ Ainsi que la marque, le prix et une description du produit.
 * ``` git clone https://github.com/miskinaaa/Mobile.git ```
 * Ouvrir l'application avec Android Studio
 
-### Page principale
+
+### Page principale : 
 
 ![alt text](https://github.com/miskinaaa/Mobile/blob/develop/Test/app/src/main/252c4655-1e2f-4aef-8dd9-d3128f42e6cb.JPG) 
 
 
-### Page du détail de l'article sur lequel on a cliqué
+
+### Page du détail de l'article sur lequel on a cliqué : 
 
 ![alt text](https://github.com/miskinaaa/Mobile/blob/develop/Test/app/src/main/fb3ad30f-3a5e-458e-b8e0-eb9b641f9764.JPG) 
+
 
 ### Fonctionnalités
 * Architecture MVC

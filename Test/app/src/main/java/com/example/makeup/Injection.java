@@ -10,6 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Injection {
     private static RestApiMakeUp restApiMakeUp;
+    private static final String BASE_URL = "https://makeup-api.herokuapp.com/api/v1/";
 
     //Singleton
     public static RestApiMakeUp getRestApi(){
@@ -19,7 +20,7 @@ public class Injection {
                     .create();
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://makeup-api.herokuapp.com/api/v1/")
+                    .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();
             restApiMakeUp = retrofit.create(RestApiMakeUp.class);

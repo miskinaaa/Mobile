@@ -26,7 +26,7 @@ public class SecondActivityFoundation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-       Foundation fd = (Foundation) getIntent().getSerializableExtra("Foundation");
+        Foundation fd = (Foundation) getIntent().getSerializableExtra("Foundation");
 
 
         description = findViewById(R.id.desc);
