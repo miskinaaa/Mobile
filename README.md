@@ -31,6 +31,7 @@ Ainsi que la marque, le prix et une description du produit.
 * Affichage du détail
 * GridLayout
 * Scroll view
+* Fragment
 
 ### Librairies utilisées
 
