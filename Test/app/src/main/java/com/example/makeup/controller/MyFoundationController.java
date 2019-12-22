@@ -5,7 +5,6 @@ import android.text.TextUtils;
 
 
 import com.example.makeup.RestApiMakeUp;
-import com.example.makeup.SearchFragment;
 import com.example.makeup.model.Foundation;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

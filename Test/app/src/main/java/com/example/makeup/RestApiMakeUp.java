@@ -15,6 +15,6 @@ public interface RestApiMakeUp {
     Call<List<Lipstick>> getLipstickData();
     @GET("products.json?product_category=concealer&product_type=foundation")
     Call<List<Foundation>> getFoundationData();
-    @GET("products.json?product_category=powder&product_type=blush")
+    @GET("products.json?product_type=blush")
     Call<List<Blush>> getBlushData();
 }

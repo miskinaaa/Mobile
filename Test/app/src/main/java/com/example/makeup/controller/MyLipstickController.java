@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 
 
-import com.example.makeup.HomeFragment;
 import com.example.makeup.RestApiMakeUp;
 import com.example.makeup.model.Lipstick;
 import com.google.gson.Gson;

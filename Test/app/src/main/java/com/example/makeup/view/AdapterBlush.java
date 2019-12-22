@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.makeup.HomeFragment;
 import com.example.makeup.model.Blush;
 import com.example.test.R;
 

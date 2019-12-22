@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         Lipstick mu = (Lipstick) getIntent().getSerializableExtra("Lipstick");
-       // Foundation fd = (Foundation) getIntent().getSerializableExtra("Foundation");
+        // Foundation fd = (Foundation) getIntent().getSerializableExtra("Foundation");
         //Blush bl = (Blush) getIntent().getSerializableExtra("Blush");
 
         description = findViewById(R.id.desc);
@@ -38,17 +38,6 @@ public class SecondActivity extends AppCompatActivity {
         ImageView image_link = findViewById(R.id.imageView);
         Picasso.get().load(mu.getImage_link()).into(image_link);
 
-        /*description.setText(fd.getDescription());
-        brand.setText(fd.getBrand());
-        name.setText(fd.getName());
-        price.setText(fd.getPrice());
-        price_sign.setText(fd.getPrice_sign());
-
-        description.setText(bl.getDescription());
-        brand.setText(bl.getBrand());
-        name.setText(bl.getName());
-        price.setText(bl.getPrice());
-        price_sign.setText(bl.getPrice_sign());*/
 
         description.setText(mu.getDescription());
         brand.setText(mu.getBrand());
