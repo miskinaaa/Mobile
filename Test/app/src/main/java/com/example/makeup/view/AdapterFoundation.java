@@ -112,10 +112,10 @@ public class AdapterFoundation extends RecyclerView.Adapter<AdapterFoundation.Vi
 
         holder.txtHeader.setText(mu.getName());
         if (mu.getBrand().matches("")) {
-            holder.txtFooter.setText("Marque : " + mu.getBrand());
+            holder.txtFooter.setText(mu.getBrand());
         }
         else {
-            holder.txtFooter.setText("Marque : " + mu.getBrand().toUpperCase());
+            holder.txtFooter.setText(mu.getBrand().toUpperCase());
         }
         Log.d("URL", String.valueOf(position));
         Glide.with(holder.itemView).load(mu.getImage_link()).into(holder.img);
